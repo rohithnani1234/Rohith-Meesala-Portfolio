@@ -1,185 +1,282 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Meesala Rohith — Portfolio</title>
-  <meta name="description" content="Portfolio of Meesala Rohith Kumar Naidu — Java | Full Stack | AI | Data" />
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="container">
-    <header>
-      <div class="brand">
-        <div class="logo">RN</div>
-        <div>
-          <div style="font-weight:800">Meesala Rohith</div>
-          <small class="muted">AI · Backend · Full Stack</small>
-        </div>
-      </div>
-
-      <button class="nav-toggle" id="navToggle">Menu ▾</button>
-      <nav id="mainNav">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact" class="cta">Contact</a>
-      </nav>
-    </header>
-
-    <main class="hero">
-      <div class="card intro floating">
-        <h1>Hi, I'm <span class="name-highlight">Meesala Rohith</span></h1>
-        <p class="lead">Software engineer-in-training focused on Backend & Full Stack development. I build reliable systems using Java, Spring, and modern web technologies. I also explore AI/ML solutions and practical LLM integrations.</p>
-
-        <div class="badges">
-          <div class="badge">Parul University '25</div>
-          <div class="badge">B.Tech — AI</div>
-          <div class="badge">CGPA 8.02</div>
-        </div>
-
-        <div class="actions">
-          <button id="downloadBtn" class="badge">Download Resume</button>
-          <a class="badge" href="https://github.com/rohithnani1234" target="_blank" rel="noopener">GitHub</a>
-          <a class="badge" href="https://www.linkedin.com/in/meesala-rohith-kumar-naidu" target="_blank" rel="noopener">LinkedIn</a>
-        </div>
-
-        <h3>Quick Facts</h3>
-        <div class="badges">
-          <div class="badge">Languages: Java, Python</div>
-          <div class="badge">Frontend: HTML, CSS, JS, React</div>
-          <div class="badge">DB: MySQL</div>
-        </div>
-      </div>
-
-      <aside class="card photo">
-        <div class="avatar">RN</div>
-        <div class="name">Meesala Rohith Kumar Naidu</div>
-        <small class="muted">rohithnani566@gmail.com · +91 7989034784</small>
-
-        <div class="contact">
-          <a href="#projects">Portfolio → <span>view</span></a>
-          <a href="#skills">All Skills → <span>view</span></a>
-          <a href="/mnt/data/Rohith.pdf" id="resumeLink">Open CV (PDF)</a>
-        </div>
-      </aside>
-    </main>
-
-    <section id="about" class="card">
-      <h2>About Me</h2>
-      <p class="muted">I'm an enthusiastic Software Engineer in training, building a strong foundation in Core Java, Advanced Java, and backend development. I have hands-on experience with Spring, Spring Boot, Hibernate, JDBC, and databases like MySQL. I also build responsive web UI using HTML, CSS and JavaScript and have worked with LLM-based web projects.</p>
-      <div class="badges">
-        <div class="badge">Open to Internships</div>
-        <div class="badge">Backend · Full Stack</div>
-        <div class="badge">Power BI & Data Analysis</div>
-      </div>
-    </section>
-
-    <section id="skills" class="card">
-      <h2>Skills</h2>
-      <div class="skills">
-        <div>
-          <h4>Core — Languages & Backend</h4>
-          <div class="skill-list">
-            <div class="skill"><div class="icon">☕</div><div class="meta">Java<small>OOP, JDBC, Spring</small></div></div>
-            <div class="skill"><div class="icon">🐍</div><div class="meta">Python<small>ML, Flask</small></div></div>
-            <div class="skill"><div class="icon">🗄️</div><div class="meta">MySQL<small>Queries & Optimisation</small></div></div>
-            <div class="skill"><div class="icon">🔗</div><div class="meta">JDBC<small>DB Connectivity</small></div></div>
-            <div class="skill"><div class="icon">⚙️</div><div class="meta">Spring Boot<small>APIs & Microservices</small></div></div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Meesala Rohith — Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Meesala Rohith Kumar Naidu — Java | Full Stack | AI | Data"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="brand">
+          <div class="logo">RN</div>
+          <div>
+            <div style="font-weight: 800">Meesala Rohith</div>
+            <small class="muted">AI · Backend · Full Stack</small>
           </div>
         </div>
-        <div>
-          <h4>Frontend & Tools</h4>
-          <div class="skill-list">
-            <div class="skill"><div class="icon">🌐</div><div class="meta">HTML/CSS<small>Responsive UI</small></div></div>
-            <div class="skill"><div class="icon">✨</div><div class="meta">JavaScript<small>DOM, ES6+</small></div></div>
-            <div class="skill"><div class="icon">⚛️</div><div class="meta">React JS<small>SPA, Components</small></div></div>
-            <div class="skill"><div class="icon">🔧</div><div class="meta">Git / GitHub<small>Version Control</small></div></div>
-            <div class="skill"><div class="icon">📊</div><div class="meta">PowerBI<small>Dashboards & DAX</small></div></div>
+
+        <button class="nav-toggle" id="navToggle">Menu ▾</button>
+        <nav id="mainNav">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact" class="cta">Contact</a>
+        </nav>
+      </header>
+
+      <main class="hero">
+        <div class="card intro floating">
+          <h1>Hi, I'm <span class="name-highlight">Meesala Rohith</span></h1>
+          <p class="lead">
+            Software engineer-in-training focused on Backend & Full Stack
+            development. I build reliable systems using Java, Spring, and modern
+            web technologies. I also explore AI/ML solutions and practical LLM
+            integrations.
+          </p>
+
+          <div class="badges">
+            <div class="badge">Parul University '25</div>
+            <div class="badge">B.Tech — AI</div>
+            <div class="badge">CGPA 8.02</div>
+          </div>
+
+          <div class="actions">
+            <button id="downloadBtn" class="badge">Download Resume</button>
+            <a
+              class="badge"
+              href="https://github.com/rohithnani1234"
+              target="_blank"
+              rel="noopener"
+              >GitHub</a
+            >
+            <a
+              class="badge"
+              href="https://www.linkedin.com/in/meesala-rohith-kumar-naidu"
+              target="_blank"
+              rel="noopener"
+              >LinkedIn</a
+            >
+          </div>
+
+          <h3>Quick Facts</h3>
+          <div class="badges">
+            <div class="badge">Languages: Java, Python</div>
+            <div class="badge">Frontend: HTML, CSS, JS, React</div>
+            <div class="badge">DB: MySQL</div>
           </div>
         </div>
-      </div>
 
-      <h3>Other Tools & Soft Skills</h3>
-      <div class="badges">
-        <div class="badge">VS Code</div>
-        <div class="badge">Eclipse</div>
-        <div class="badge">JIRA (basics)</div>
-        <div class="badge">Microsoft Excel</div>
-        <div class="badge">Communication & Leadership</div>
-      </div>
-    </section>
+        <aside class="card photo">
+          <div class="avatar">RN</div>
+          <div class="name">Meesala Rohith Kumar Naidu</div>
+          <small class="muted">rohithnani566@gmail.com · +91 7989034784</small>
 
-    <section id="projects" class="card">
-      <h2>Selected Projects</h2>
+          <div class="contact">
+            <a href="#projects">Portfolio → <span>view</span></a>
+            <a href="#skills">All Skills → <span>view</span></a>
+            <a href="./Rohith.pdf" id="resumeLink">Open CV (PDF)</a>
+          </div>
+        </aside>
+      </main>
 
-      <div class="project">
-        <div class="thumb">GPT</div>
-        <div>
-          <h4>Offline Private GPT</h4>
-          <p class="muted">Built a web-based LLM system delivering personalized information (~90% accuracy, &lt;2s response). Includes an admin panel for monitoring and analytics. Technologies: HTML, CSS, JavaScript, LLMs (Orca mini, qwen2), OpenWebUI.</p>
+      <section id="about" class="card">
+        <h2>About Me</h2>
+        <p class="muted">
+          I'm an enthusiastic Software Engineer in training, building a strong
+          foundation in Core Java, Advanced Java, and backend development. I
+          have hands-on experience with Spring, Spring Boot, Hibernate, JDBC,
+          and databases like MySQL. I also build responsive web UI using HTML,
+          CSS and JavaScript and have worked with LLM-based web projects.
+        </p>
+        <div class="badges">
+          <div class="badge">Open to Internships</div>
+          <div class="badge">Backend · Full Stack</div>
+          <div class="badge">Power BI & Data Analysis</div>
         </div>
-      </div>
+      </section>
 
-      <div class="project">
-        <div class="thumb">Travel</div>
-        <div>
-          <h4>Travel & Tourism Recommendation System</h4>
-          <p class="muted">Hybrid recommender (content + collaborative) improved accuracy by ~18%. Processed 5k+ entries with Pandas & Scikit-learn and deployed via Flask for fast responses (&lt;1.5s).</p>
+      <section id="skills" class="card">
+        <h2>Skills</h2>
+        <div class="skills">
+          <div>
+            <h4>Core — Languages & Backend</h4>
+            <div class="skill-list">
+              <div class="skill">
+                <div class="icon">☕</div>
+                <div class="meta">Java<small>OOP, JDBC, Spring</small></div>
+              </div>
+              <div class="skill">
+                <div class="icon">🐍</div>
+                <div class="meta">Python<small>ML, Flask</small></div>
+              </div>
+              <div class="skill">
+                <div class="icon">🗄️</div>
+                <div class="meta">
+                  MySQL<small>Queries & Optimisation</small>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="icon">🔗</div>
+                <div class="meta">JDBC<small>DB Connectivity</small></div>
+              </div>
+              <div class="skill">
+                <div class="icon">⚙️</div>
+                <div class="meta">
+                  Spring Boot<small>APIs & Microservices</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h4>Frontend & Tools</h4>
+            <div class="skill-list">
+              <div class="skill">
+                <div class="icon">🌐</div>
+                <div class="meta">HTML/CSS<small>Responsive UI</small></div>
+              </div>
+              <div class="skill">
+                <div class="icon">✨</div>
+                <div class="meta">JavaScript<small>DOM, ES6+</small></div>
+              </div>
+              <div class="skill">
+                <div class="icon">⚛️</div>
+                <div class="meta">React JS<small>SPA, Components</small></div>
+              </div>
+              <div class="skill">
+                <div class="icon">🔧</div>
+                <div class="meta">
+                  Git / GitHub<small>Version Control</small>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="icon">📊</div>
+                <div class="meta">PowerBI<small>Dashboards & DAX</small></div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
 
-      <div class="project">
-        <div class="thumb">Hotel</div>
-        <div>
-          <h4>Hotel Reservation System (Java)</h4>
-          <p class="muted">Console-based system using Java, JDBC and MySQL — CRUD operations, validations and formatted reservation displays.</p>
+        <h3>Other Tools & Soft Skills</h3>
+        <div class="badges">
+          <div class="badge">VS Code</div>
+          <div class="badge">Eclipse</div>
+          <div class="badge">JIRA (basics)</div>
+          <div class="badge">Microsoft Excel</div>
+          <div class="badge">Communication & Leadership</div>
         </div>
-      </div>
+      </section>
 
-      <div class="project">
-        <div class="thumb">Hospital</div>
-        <div>
-          <h4>Hospital Management System (Java)</h4>
-          <p class="muted">Patient record & appointment management using Java, JDBC and MySQL. Implemented PreparedStatements for secure DB operations and availability checks.</p>
+      <section id="projects" class="card">
+        <h2>Selected Projects</h2>
+
+        <div class="project">
+          <div class="thumb">GPT</div>
+          <div>
+            <h4>Offline Private GPT</h4>
+            <p class="muted">
+              Built a web-based LLM system delivering personalized information
+              (~90% accuracy, &lt;2s response). Includes an admin panel for
+              monitoring and analytics. Technologies: HTML, CSS, JavaScript,
+              LLMs (Orca mini, qwen2), OpenWebUI.
+            </p>
+          </div>
         </div>
-      </div>
 
-    </section>
-
-    <section class="card">
-      <h2>Education & Experience</h2>
-      <div class="timeline">
-        <div class="event">
-          <strong>Parul University</strong>
-          <div class="muted">B.Tech — Artificial Intelligence (2021 - 2025) — CGPA: 8.02/10</div>
+        <div class="project">
+          <div class="thumb">Travel</div>
+          <div>
+            <h4>Travel & Tourism Recommendation System</h4>
+            <p class="muted">
+              Hybrid recommender (content + collaborative) improved accuracy by
+              ~18%. Processed 5k+ entries with Pandas & Scikit-learn and
+              deployed via Flask for fast responses (&lt;1.5s).
+            </p>
+          </div>
         </div>
-        <div class="event">
-          <strong>Data Analyst Intern</strong>
-          <div class="muted">2 months — Worked on Power BI dashboards and DAX; led a 4-member team and improved dashboard insights delivery.</div>
+
+        <div class="project">
+          <div class="thumb">Hotel</div>
+          <div>
+            <h4>Hotel Reservation System (Java)</h4>
+            <p class="muted">
+              Console-based system using Java, JDBC and MySQL — CRUD operations,
+              validations and formatted reservation displays.
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
 
-    <section id="contact" class="card">
-      <h2>Contact</h2>
-      <p class="muted">Email: <a href="mailto:rohithnani566@gmail.com">rohithnani566@gmail.com</a> · Phone: <a href="tel:+917989034784">+91 7989034784</a></p>
-      <p class="muted">LinkedIn: <a href="https://www.linkedin.com/in/meesala-rohith-kumar-naidu">meesala-rohith-kumar-naidu</a> · GitHub: <a href="https://github.com/rohithnani1234">rohithnani1234</a></p>
+        <div class="project">
+          <div class="thumb">Hospital</div>
+          <div>
+            <h4>Hospital Management System (Java)</h4>
+            <p class="muted">
+              Patient record & appointment management using Java, JDBC and
+              MySQL. Implemented PreparedStatements for secure DB operations and
+              availability checks.
+            </p>
+          </div>
+        </div>
+      </section>
 
-      <div class="badges">
-        <a href="mailto:rohithnani566@gmail.com" class="badge">Message</a>
-        <a href="/mnt/data/Rohith.pdf" class="badge">View Resume (PDF)</a>
-        <a href="https://github.com/rohithnani1234" class="badge">View Code</a>
-      </div>
-    </section>
+      <section class="card">
+        <h2>Education & Experience</h2>
+        <div class="timeline">
+          <div class="event">
+            <strong>Parul University</strong>
+            <div class="muted">
+              B.Tech — Artificial Intelligence (2021 - 2025) — CGPA: 8.02/10
+            </div>
+          </div>
+          <div class="event">
+            <strong>Data Analyst Intern</strong>
+            <div class="muted">
+              2 months — Worked on Power BI dashboards and DAX; led a 4-member
+              team and improved dashboard insights delivery.
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <div class="spacer"></div>
+      <section id="contact" class="card">
+        <h2>Contact</h2>
+        <p class="muted">
+          Email:
+          <a href="mailto:rohithnani566@gmail.com">rohithnani566@gmail.com</a> ·
+          Phone: <a href="tel:+917989034784">+91 7989034784</a>
+        </p>
+        <p class="muted">
+          LinkedIn:
+          <a
+            href="https://www.linkedin.com/in/meesala-rohith-kumar-naidu-7b3752249/"
+            >meesala-rohith-kumar-naidu</a
+          >
+          · GitHub:
+          <a href="https://github.com/rohithnani1234">rohithnani1234</a>
+        </p>
 
-    <footer>
-      Crafted with ❤️ — Interactive portfolio preview. Resume details used from uploaded CV.
-    </footer>
-  </div>
+        <div class="badges">
+          <a href="mailto:rohithnani566@gmail.com" class="badge">Message</a>
+          <a href="./Rohith.pdf" class="badge">View Resume (PDF)</a>
+          <a href="https://github.com/rohithnani1234" class="badge"
+            >View Code</a
+          >
+        </div>
+      </section>
 
-  <script src="script.js"></script>
-</body>
+      <div class="spacer"></div>
+
+      <footer>
+        Crafted with — Interactive portfolio preview. Resume details used from
+        uploaded CV.
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
